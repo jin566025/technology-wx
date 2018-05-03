@@ -20,5 +20,6 @@
 
 <style>
 @import url("../static/css/common.css");
-#main{width: 100%;}
+body{overflow-x: hidden;}
+#main{width: 100%;overflow-x: hidden;}
 </style>

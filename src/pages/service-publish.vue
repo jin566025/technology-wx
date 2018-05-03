@@ -33,9 +33,9 @@
 
 <style lang="less" rel="stylesheet/less" scoped>
 	.main{
-		width: 18rem;margin: 0 auto;
+		
 		.section{
-			height: 3rem;align-items: center;font-size: 0.7rem;color: #323232;font-family: arial;
+			height: 3rem;align-items: center;font-size: 0.7rem;color: #323232;font-family: arial;margin-left:2%;
 			.section-left{width: 3.6rem;}
 			.section-right{
 				.section-part{

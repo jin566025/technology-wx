@@ -2,7 +2,7 @@
 	<div class="content">
 		<div class="header">
 			<p class="header-title">有需求   问专家</p>
-			<div class="header-btn">
+			<div class="header-btn" @click="toSearch()">
 				<i class="header-icon fa fa-search"></i>
 				<a>寻找你的专家顾问</a>
 			</div>
@@ -10,7 +10,7 @@
 		<div class="lg-section">
 			<div class="section-title flex-box">
 				<div class="section-title-left">合作机构</div>
-				<div class="section-title-right">
+				<div class="section-title-right" @click="readMore1()">
 					<a class="to-right-text">查看更多</a>
 					<i class="to-right fa fa-angle-double-right"></i>
 				</div>
@@ -40,7 +40,7 @@
 		<div class="lg-section">
 			<div class="section-title flex-box">
 				<div class="section-title-left">政策</div>
-				<div class="section-title-right">
+				<div class="section-title-right" @click="readMore2()">
 					<a class="to-right-text">查看更多</a>
 					<i class="to-right fa fa-angle-double-right"></i>
 				</div>
@@ -91,6 +91,17 @@
 	export default{
 		components:{
 		   MFooter
+		},
+		methods:{
+			toSearch:function(){
+				this.$router.push({path:"/search"})
+			},
+			readMore1:function(){
+				this.$router.push({path:"/consult-list1"})
+			},
+			readMore2:function(){
+				this.$router.push({path:"/consult-list2"})
+			}
 		}
 	}
 </script>
@@ -101,12 +112,12 @@
 		height: 6rem;background-color:#4DB4FF;text-align: center;
 		.header-title{font-family:Arial;color:#fff;font-size:0.8rem;padding-top:1rem;padding-bottom:0.65rem;font-weight:bold;}
 		.header-btn{
-			width: 16.6rem;height: 2rem;line-height:2rem;border-radius: 0.25rem;text-align: center;background-color: #fff;margin: 0 auto;font-size: 0.6rem;font-family: arial;color: #323232 ;
+			width: 92%;height: 2rem;line-height:2rem;border-radius: 0.25rem;text-align: center;background-color: #fff;margin: 0 auto;font-size: 0.6rem;font-family: arial;color: #323232 ;
 			.header-icon{color:#4DB4FF;font-size:0.8rem}
 		}
 	}
 	.lg-section{
-		width:18rem;height:17rem;margin:0 auto;padding:0.2rem;
+		width:96%;height:17rem;margin:0 auto;padding:0.2rem;
 		.section-title{
 			align-items: center;margin-bottom:0.8rem;
 			.section-title-left{width: 50%;color: rgba(77, 180, 255, 1);font-size: 0.8rem;font-family: Arial;font-weight: bold;}
@@ -117,12 +128,12 @@
 			}
 		}
 		.section-main{
-			align-items: center;margin-bottom: 1.05rem;
+			align-items: center;margin-bottom: 1.05rem;width: 100%;
 			.section-main-left{width: 4rem;height: 4rem;margin-right: 0.55rem;}
 			.section-main-right{
-				flex: 1;
+				width: 70%;
 				.section-name{font-size: 0.8rem;color: #323232;font-family: arial;}
-				.section-desc{font-size: 0.6rem;color: #C8C8C8;font-family: arial;margin-top: 0.7rem;text-overflow: ellipsis;overflow: hidden;white-space: nowrap;}
+				.section-desc{font-size: 0.6rem;color: #C8C8C8;font-family: arial;margin-top: 0.7rem;text-overflow: ellipsis;overflow: hidden;white-space: nowrap;width: 100%;}
 				.section-desc2{margin: 0.4rem 0;}
 				.desc-detail{
 					font-size: 0.5rem;color: #1F93FF ;font-family: arial;

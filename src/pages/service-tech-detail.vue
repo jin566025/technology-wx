@@ -40,16 +40,16 @@
 <style lang="less" rel="stylesheet/less" scoped>
 	.arial{font-family: arial;}
 	.content{
-		.title{font-size: 1rem;color: #323232;font-weight: bold;width: 17.8rem;margin: 0 auto;padding: 0.5rem 0;margin-bottom: 0.5rem;}
+		.title{font-size: 1rem;color: #323232;font-weight: bold;width: 96%;margin: 0 auto;padding: 0.5rem 0;margin-bottom: 0.5rem;}
 		.msg{
-			width: 17.8rem;margin: 0 auto;align-items: center;
+			width: 96%;margin: 0 auto;align-items: center;
 			.msg-a1{color: #1F93FF;font-size: 0.6rem;.arial;margin-right: 0.5rem;}
 			.msg-a2{flex: 1;}
 			.msg-a3{color: #C8C8C8;font-size: 0.6rem;.arial;margin-left: 0.5rem;}
 		}
 		.banner{height: 12.5rem;width: 100%;background-image: url(../../static/image/test1.jpeg);background-repeat: no-repeat;background-position: center;background-size: cover;margin: 1rem 0;}
 		.container{
-			width: 17.8rem;margin: 0 auto;.arial;
+			width: 96%;margin: 0 auto;.arial;
 			.container-desc1{font-size: 0.6rem;color: #323232;margin-bottom: 0.5rem;}
 			.container-desc2{font-size: 0.75rem;color: #323232;margin-bottom: 1.85rem;}
 			.desc-detail{

@@ -61,16 +61,16 @@
 <style lang="less" rel="stylesheet/less" scoped>
 	.arial{font-family: arial;}
 	.content{
-		.title{font-size: 1rem;color: #323232;font-weight: bold;width: 17.8rem;margin: 0 auto;padding: 0.5rem 0;margin-bottom: 0.5rem;}
+		.title{font-size: 1rem;color: #323232;font-weight: bold;width: 96%;margin: 0 auto;padding: 0.5rem 0;margin-bottom: 0.5rem;}
 		.msg{
-			width: 17.8rem;margin: 0 auto;align-items: center;
+			width: 96%;margin: 0 auto;align-items: center;
 			.msg-a1{color: #1F93FF;font-size: 0.6rem;.arial;margin-right: 0.5rem;}
 			.msg-a2{flex: 1;}
 			.msg-a3{color: #C8C8C8;font-size: 0.6rem;.arial;margin-left: 0.5rem;}
 		}
 		.banner{height: 12.5rem;width: 100%;background-image: url(../../static/image/test3.jpeg);background-repeat: no-repeat;background-position: center;background-size: cover;margin: 1rem 0;}
 		.container{
-			width: 17.8rem;margin: 0 auto;.arial;
+			width: 96%;margin: 0 auto;.arial;
 			.desc{
 				color: #969696;font-size: 0.6rem;.arial;margin-bottom:0.5rem;
 				.desc-p1{text-align: left;}
@@ -78,10 +78,10 @@
 				.desc-p3{text-align: right;}
 			}
 			.contract{
-				font-size: 0.7rem;color: #323232;.arial;width:17rem;margin:0 auto;margin-top:1.3rem;
+				font-size: 0.7rem;color: #323232;.arial;width:92%;margin:0 auto;margin-top:1.3rem;
 				.contract-title{margin-bottom: 0.5rem;}
 				.contract-sec{
-					margin-bottom: 0.5rem;
+					margin-bottom: 0.8rem;
 					.idimg{width: 7.5rem;height: 5rem;}
 				}
 			}
@@ -99,6 +99,6 @@
 			.foot-a3{font-size: 0.7rem;color: #ffffff;background-color: #1F93FF ;.arial;width: 4.6rem;height: 1.5rem;margin-right: 0.5rem;text-align: center;border-radius: 5px;line-height: 1.5rem;}
 			.foot-a4{flex: 1;}
 		}
-		.zanwei{height: 2.25rem;width: 100%;}
+		.zanwei{height: 4rem;width: 100%;}
 	}
 </style>

@@ -12,7 +12,7 @@
 				<div class="section-botom flex-box  type1">
 					<div class="section-botom-left">进行中</div>
 					<div class="section-bottom-mid"></div>
-					<div class="section-botom-right" @click="toEnroll()">我要报名</div>
+					<div class="section-botom-right" @click="toDetail()">我要报名</div>
 				</div>
 			</div>
 		</div>
@@ -46,9 +46,6 @@
 		methods:{
 			toDetail:function(){
 				this.$router.push({path:'/activity-detail'})
-			},
-			toEnroll:function(){
-				this.$router.push({path:'/activity-enroll'})
 			}
 		}
 	}
@@ -57,9 +54,9 @@
 <style lang="less" rel="stylesheet/less" scoped>
 	.section{
 		width: 96%;height: 17.75rem;margin: 0 auto;margin-top: 0.55rem;margin-bottom: 0.85rem;
-		.section-img{width: 96%;height: 11.8rem;border-radius: 0.25rem;margin: 0 auto;}
+		.section-img{width: 100%;height: 11.8rem;border-radius: 0.25rem;}
 		.section-content{
-			width: 92%;margin: 0 auto;margin-top: 0.4rem;
+			width: 96%;margin: 0 auto;margin-top: 0.4rem;
 			.section-head{
 				align-items: center;
 				.section-head-left{margin-right: 0.45rem;width: 3.4rem;height: 1rem;line-height:1rem;border-radius: 1rem;background-color:#FF3838;color:#FFFFFF;font-size: 0.55rem;text-align: center;font-family: Arial;}

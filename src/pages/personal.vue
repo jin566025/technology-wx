@@ -3,7 +3,7 @@
 		<div class="content-login" v-if="isLogin">
 			<div class="content-login-top flex-box">
 				<div class="content-login-top-left">
-					<img class="img" src="../assets/logo.png" />
+					<img class="img" src="../../static/image/test6.jpeg" />
 				</div>
 				<div class="content-login-top-mid"> 
 					<p>名字：x小明</p>
@@ -11,31 +11,31 @@
 				</div>
 			</div>
 			<div class="content-login-nav clearfix">
-				<div class="content-login-navs fl">
+				<div class="content-login-navs fl" @click="toMsg()">
 					<p class="content-login-navs-p2">23</p>
 					<p class="content-login-navs-p1">我的消息</p>
 				</div>
-				<div class="content-login-navs fl">
+				<div class="content-login-navs fl" @click="toSub()">
 					<p class="content-login-navs-p2">23</p>
-					<p class="content-login-navs-p1">我的消息</p>
+					<p class="content-login-navs-p1">我的订阅</p>
 				</div>
-				<div class="content-login-navs fl">
+				<div class="content-login-navs fl" @click="toCollect()">
 					<p class="content-login-navs-p2">23</p>
-					<p class="content-login-navs-p1">我的消息</p>
+					<p class="content-login-navs-p1">我收藏的</p>
 				</div>
-				<div class="content-login-navs fl">
+				<div class="content-login-navs fl" @click="toEnroll()">
 					<p class="content-login-navs-p2">23</p>
-					<p class="content-login-navs-p1">我的消息</p>
+					<p class="content-login-navs-p1">我报名的</p>
 				</div>
 			</div>
 			<div class="login-section">
 				<p class="section-title">我咨询的</p>
 				<div class="sections clearfix">
-					<div class="sections-part fl">
+					<div class="sections-part fl" @click="toConsultTech()">
 						<p class="content-login-navs-p3">15</p>
 						<p class="content-login-navs-p1">技术</p>
 					</div>
-					<div class="sections-part fl">
+					<div class="sections-part fl" @click="toConsultNeed()">
 						<p class="content-login-navs-p3">16</p>
 						<p class="content-login-navs-p1">需求</p>
 					</div>
@@ -44,22 +44,22 @@
 			<div class="login-section">
 				<p class="section-title">我发布的</p>
 				<div class="sections clearfix">
-					<div class="sections-part fl">
+					<div class="sections-part fl" @click="toPublishTech()">
 						<p class="content-login-navs-p3">15</p>
 						<p class="content-login-navs-p1">技术</p>
 					</div>
-					<div class="sections-part fl">
+					<div class="sections-part fl" @click="toPublishNeed()">
 						<p class="content-login-navs-p3">16</p>
 						<p class="content-login-navs-p1">需求</p>
 					</div>
 				</div>
 			</div>
-			<div class="login-section2 flex-box">
+			<div class="login-section2 flex-box" @click="toAbout()">
 				<div class="section2-icon fa fa-user-o"></div>
 				<div class="section2-title">关于我们</div>
 				<div class="section2-right fa fa-angle-right"></div>
 			</div>
-			<div class="login-section2 flex-box">
+			<div class="login-section2 flex-box" @click="toSetting()">
 				<div class="section2-icon fa fa-cog"></div>
 				<div class="section2-title">个人设置</div>
 				<div class="section2-right fa fa-angle-right"></div>
@@ -132,13 +132,43 @@
 	export default{
 		data(){
 			return {
-				isLogin:false
+				isLogin:true
 			}
 		},
 		methods:{
 			toLogin:function(){
 				this.$router.push({path:'/login'});
 //				this.$store.commit('tabFooter')
+			},
+			toMsg:function(){
+				this.$router.push({path:'/personal-msg'});
+			},
+			toSub:function(){
+				this.$router.push({path:'/personal-sub'});
+			},
+			toCollect:function(){
+				this.$router.push({path:'/personal-collect'});
+			},
+			toEnroll:function(){
+				this.$router.push({path:'/personal-enroll'});
+			},
+			toConsultTech:function(){
+				this.$router.push({path:'/personal-consult'})
+			},
+			toConsultNeed:function(){
+				this.$router.push({path:'/personal-consult/personal-consult-need'})
+			},
+			toPublishTech:function(){
+				this.$router.push({path:'/personal-publish'})
+			},
+			toPublishNeed:function(){
+				this.$router.push({path:'/personal-publish/personal-publish-need'})
+			},
+			toAbout:function(){
+				this.$router.push({path:'/personal-about'})
+			},
+			toSetting:function(){
+				this.$router.push({path:'/personal-setting'})
 			}
 		},
 		components:{
@@ -170,7 +200,7 @@
 			}
 		}
 		.login-section{
-			width: 18rem;margin: 0 auto;margin-top: 0.55rem;
+			width: 96%;margin: 0 auto;margin-top: 0.55rem;
 			.section-title{font-size: 0.7rem;color: #323232;font-family: arial;}
 			.sections{
 				width: 100%;
@@ -182,7 +212,7 @@
 			}
 		}
 		.login-section2{
-			width: 18rem;margin: 0 auto;align-items: center;margin-top: 1.55rem;
+			width:96%;margin: 0 auto;align-items: center;margin-top: 1.55rem;
 			.section2-icon{width: 1rem;height: 1rem;font-size: 1rem;color: #4DB4FF;margin-right: 0.55rem;}
 			.section2-title{font-size: 0.7rem;font-family: arial;color: #323232;flex: 1;}
 			.section2-right{font-size: 1rem;color: #646464 ;}

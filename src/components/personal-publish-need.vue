@@ -65,20 +65,17 @@
 				<div class="section-descs fl">2018-03-06</div>
 			</div>
 		</div>
-		<float-nav></float-nav>
+
 	</div>
 </template>
 
 <script>
-	import FloatNav from './float-nav'
+	
 	export default{
 		methods:{
 			toDetail:function(){
 				this.$router.push({path:'/service-need-detail'})
 			}
-		},
-		components:{
-		   FloatNav
 		}
 		
 	}

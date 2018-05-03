@@ -56,20 +56,17 @@
 			</div>
 			<div class="section-right">中试阶段</div>
 		</div>
-		<float-nav></float-nav>
+
 	</div>
 </template>
 
 <script>
-	import FloatNav from './float-nav'
+
 	export default{
 		methods:{
 			toDetail:function(){
 				this.$router.push({path:'/service-tech-detail'})
 			}
-		},
-		components:{
-		   FloatNav
 		}
 	}
 </script>
